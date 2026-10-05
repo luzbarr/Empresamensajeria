@@ -5,7 +5,11 @@ public abstract class Envio {
     protected double peso;
     protected double distancia;
 
-    public Envio(String codigo, String destino,double peso, double distancia) {
+    public String getcodigo() {
+        return codigo;
+    }
+
+    public Envio(String codigo, String destino, double peso, double distancia) {
         this.codigo = codigo;
         this.destino = destino;
         this.peso = peso;
